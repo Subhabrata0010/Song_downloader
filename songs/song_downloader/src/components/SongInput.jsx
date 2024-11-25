@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 
 const SongInput = ({ fetchDownloadLink }) => {
-  const [songLink, setSongLink] = useState("");
+  const [songLink, setSongId] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (songLink.trim()) {
-      fetchDownloadLink(songLink);
+      fetchDownloadLink(songId);
     }
   };
 
@@ -16,7 +16,7 @@ const SongInput = ({ fetchDownloadLink }) => {
         <input
           type="text"
           placeholder="Enter Song Link.."
-          value={songId}
+          value={songLink}
           onChange={(e) => setSongLink(e.target.value)}
           style={{ padding: "10px", margin: "20px", width: "350px",flexWrap:'wrap' }}
         />
