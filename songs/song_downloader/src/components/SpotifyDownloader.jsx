@@ -9,7 +9,7 @@ const SpotifyDownloader = () => {
     const options = {
       method: 'GET',
       headers: {
-        'x-rapidapi-key': '{RapidAPI_key}', // Replace with RapidAPI key
+        'x-rapidapi-key': '{RapidAPI_key}', // Replace with your RapidAPI key
         'x-rapidapi-host': 'spotify-downloader9.p.rapidapi.com',
       },
     };
