@@ -30,7 +30,7 @@ Song Downloader is a React-based application for fetching and downloading songs 
       npm install
 4. Configure your API :
     
-    - Replace {RapidAPI_key} in the application code with your actual RapidAPI key.
+    - Replace `{RapidAPI_key}` in the application code with your actual RapidAPI key.
 5. Run file :
       ```bash
       npm run dev
