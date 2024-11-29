@@ -1,5 +1,5 @@
 import React from "react";
-import SpotifyDownloader from "./components/SpotifyDownloader"; // Path to your main component
+import SpotifyDownloader from "./components/SpotifyDownloader"; 
 
 const App = () => {
   return (

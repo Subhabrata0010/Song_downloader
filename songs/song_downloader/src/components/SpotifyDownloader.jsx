@@ -41,7 +41,7 @@ const SpotifyDownloader = () => {
 
   return (
     <div className="downloadButtonContainer">
-      <h1>
+      <h1 className="mb-4">
         Song Downloader <br /> Spotify
       </h1>
       <SongInput fetchDownloadLink={fetchDownloadLink} />
