@@ -3,16 +3,7 @@ import SpotifyDownloader from "./components/SpotifyDownloader"; // Path to your 
 
 const App = () => {
   return (
-    <div
-      style={{
-        fontFamily: "Arial, sans-serif",
-        textAlign: "center",
-        marginTop: "20px",
-        display: "flex",
-        alignItems: "center",
-        flexDirection: "column",
-      }}
-    >
+    <div className="font-mono text-center my-10 flex flex-col items-center font-semibold text-2xl">
       <SpotifyDownloader />
     </div>
   );

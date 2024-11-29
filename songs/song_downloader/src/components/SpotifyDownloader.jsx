@@ -41,31 +41,18 @@ const SpotifyDownloader = () => {
 
   return (
     <div className="downloadButtonContainer">
-      <h1>Song Downloader <br /> Spotify</h1>
+      <h1>
+        Song Downloader <br /> Spotify
+      </h1>
       <SongInput fetchDownloadLink={fetchDownloadLink} />
       {downloadLink && (
-        <div className="downloadButton">
-          <p style={{
-            display:'flex',
-            flexDirection:'column',
-            alignItems:'center',
-            justifyContent:'center',
-            fontSize:'15px',
-            fontWeight:'700',
-            fontStyle:'italic'
-          }}>{title} <br style={{height:'10px'}} />{artist}</p>
+        <div>
+          <p className="flex flex-col items-center text-lg font-bold italic justify-center mt-10">
+            {title} <br />
+            {artist}
+          </p>
           <a href={downloadLink} target="_blank" rel="noopener noreferrer">
-            <button
-              style={{
-                backgroundColor: "#FF6F61",
-                marginTop:'30px',
-                marginBottom: "10px",
-                fontWeight: "600",
-                width: "120px",
-                height: "40px",
-                borderRadius: "10px",
-              }}
-            >
+            <button className="bg-[#ff6f61] mt-5 font-semibold w-36 h-10 rounded-xl text-base hover:bg-red-500 focus:outline-none focus:ring focus:ring-red-800">
               Download Song
             </button>
           </a>
