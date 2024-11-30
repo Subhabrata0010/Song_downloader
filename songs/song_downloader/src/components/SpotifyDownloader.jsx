@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import SongInput from "./SongInput"; // The input component for entering song ID.
+import SongInput from "./SongInput";
+import Card from "./Card";
 
 const SpotifyDownloader = () => {
   const [downloadLink, setDownloadLink] = useState(null);
@@ -47,12 +48,9 @@ const SpotifyDownloader = () => {
       <SongInput fetchDownloadLink={fetchDownloadLink} />
       {downloadLink && (
         <div>
-          <p className="flex flex-col items-center text-lg font-bold italic justify-center mt-10">
-            {title} <br />
-            {artist}
-          </p>
+          <Card title={title} artist={artist}/>
           <a href={downloadLink} target="_blank" rel="noopener noreferrer">
-            <button className="bg-[#ff6f61] mt-5 font-semibold w-36 h-10 rounded-xl text-base hover:bg-red-500 focus:outline-none focus:ring focus:ring-red-800">
+            <button className="w-[170px] h-[45px] bg-[#ff6f61] cursor-pointer transition-all text-black  rounded-lg border-red-950 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:bg-[#e93d3d] text-base mt-6">
               Download Song
             </button>
           </a>
