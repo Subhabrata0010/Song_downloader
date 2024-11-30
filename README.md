@@ -9,13 +9,14 @@ Song Downloader is a React-based application for fetching and downloading songs 
 
 ## Technologies Used
 - **React** for creating the frontend.
-- **CSS** for styling and layouts.
+- **TailwindCSS** for styling and layouts.
 - **Spotify Downloader API** from RapidAPI for backend integration.
 
 ## Getting Started
 
 ### Prerequisites
 - Install **Node.js**.
+- Install **TailwindCSS**.
 - Obtain an API key from [RapidAPI](https://rapidapi.com/).
 
 ### Installation
