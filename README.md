@@ -16,6 +16,7 @@ Song Downloader is a React-based application for fetching and downloading songs 
 
 ### Prerequisites
 - Install **Node.js**.
+- Install **TailwindCSS**.
 - Obtain an API key from [RapidAPI](https://rapidapi.com/).
 
 ### Installation
