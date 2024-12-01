@@ -21,7 +21,6 @@ const SpotifyDownloader = () => {
       const response = await fetch(url, options);
       const result = await response.json();
 
-      // Check if the response has the required structure and assign the downloadLink
       if (result.success && result.data && result.data.downloadLink) {
         setDownloadLink(result.data.downloadLink);
         setArtist(result.data.artist);
@@ -50,7 +49,7 @@ const SpotifyDownloader = () => {
         <div>
           <Card title={title} artist={artist}/>
           <a href={downloadLink} target="_blank" rel="noopener noreferrer">
-            <button className="w-[170px] h-[45px] bg-[#ff6f61] cursor-pointer transition-all text-black  rounded-lg border-red-950 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:bg-[#e93d3d] text-base mt-6">
+            <button className="dark:bg-red-300 w-[170px] h-[45px] bg-[#ff6f61] cursor-pointer transition-all text-black  rounded-lg border-red-950 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:bg-[#e93d3d] text-base mt-6">
               Download Song
             </button>
           </a>

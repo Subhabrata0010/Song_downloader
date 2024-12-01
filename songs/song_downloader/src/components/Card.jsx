@@ -23,7 +23,7 @@ const Card = ({ title, artist }) => {
           </svg>
           <div className="card-text ms-3">
             <h3
-              className="cursor-pointer w-36 card-title text-base font-semibold text-gray-700 dark:text-gray-200 truncate"
+              className="text-start pb-[2px] cursor-pointer w-36 card-title text-base font-semibold text-gray-700 dark:text-gray-200 truncate"
             >
               {title}
             </h3>

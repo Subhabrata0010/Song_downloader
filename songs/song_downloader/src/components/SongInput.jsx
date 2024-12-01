@@ -20,12 +20,12 @@ const SongInput = ({ fetchDownloadLink }) => {
           value={songLink}
           required
           onChange={(e) => setSongLink(e.target.value)}
-          className="placeholder:italic scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar w-[300px] flex flex-wrap bg-[#EDEDED] justify-center min-h-[75px] resize-none box-border p-2 rounded-[10px] font-medium text-base/5 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-2"
+          className="placeholder:italic scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar w-[300px] flex flex-wrap bg-[#EDEDED] justify-center min-h-[75px] resize-none box-border p-2 rounded-[10px] font-medium text-base/5 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-2 dark:bg-slate-900 dark:text-slate-300"
         ></textarea>
         <br />
         <button
           type="submit"
-          className="w-[170px] h-[45px] bg-[#4CAF50] cursor-pointer transition-all text-black  rounded-lg border-green-950 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:bg-[#269928] text-base mt-6">
+          className="w-[200px] h-[45px] bg-[#4CAF50] cursor-pointer transition-all text-black  rounded-lg border-green-950 border-b-[4px] hover:brightness-110 hover:-translate-y-[1px] hover:border-b-[6px] active:border-b-[2px] active:brightness-90 active:translate-y-[2px] hover:bg-[#269928] text-base mt-6">
           Get Download Link
         </button>
       </form>
