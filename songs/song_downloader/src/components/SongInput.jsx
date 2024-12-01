@@ -20,7 +20,7 @@ const SongInput = ({ fetchDownloadLink }) => {
           value={songLink}
           required
           onChange={(e) => setSongLink(e.target.value)}
-          className="placeholder:italic scrollbar-none w-[300px] flex flex-wrap bg-[#EDEDED] justify-center min-h-[75px] resize-none box-border p-2 rounded-[10px] font-medium text-base/5 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-2"
+          className="placeholder:italic scrollbar-thumb-rounded-full scrollbar-track-rounded-full scrollbar w-[300px] flex flex-wrap bg-[#EDEDED] justify-center min-h-[75px] resize-none box-border p-2 rounded-[10px] font-medium text-base/5 focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-2"
         ></textarea>
         <br />
         <button
